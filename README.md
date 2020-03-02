@@ -1,7 +1,35 @@
 Android Signature Pad
 ====================
 
-Android Signature Pad is an Android library for drawing smooth signatures. It uses variable width Bézier curve interpolation based on [Smoother Signatures](http://corner.squareup.com/2012/07/smoother-signatures.html) post by [Square](https://squareup.com).
+This is a fork of the original [SignaturePad library](https://github.com/gcacace/android-signaturepad), updating it to more recent versions of the tools and dependencies.
+
+## Installation
+
+Add jitpack repository to your project's `build.gradle`
+
+```gradle
+   repositories {
+       maven { "https://jitpack.io" }
+   }
+```
+
+Then, include this library as dependency
+
+```gradle
+compile 'com.github.gomore:signature-pad:v1.3.1.1'
+```
+
+### For Maven users
+
+Add this dependency to your `pom.xml`:
+```xml
+<dependency>
+  <groupId>com.github.gomore</groupId>
+  <artifactId>signature-pad</artifactId>
+  <version>v1.3.1.1</version>
+  <type>aar</type>
+</dependency>
+```
 
 ![Screenshot](https://github.com/gcacace/android-signaturepad/raw/master/header.png)
 
@@ -11,35 +39,6 @@ Android Signature Pad is an Android library for drawing smooth signatures. It us
  * Customizable pen color and size
  * Bitmap and SVG support
  * Data Binding
-
-## Installation
-
-Latest version of the library can be found on Maven Central.
-
-### For Gradle users
-
-Open your `build.gradle` and make sure that Maven Central repository is declared into `repositories` section:
-```gradle
-   repositories {
-       mavenCentral()
-   }
-```
-Then, include the library as dependency:
-```gradle
-compile 'com.github.gcacace:signature-pad:1.3.1'
-```
-
-### For Maven users
-
-Add this dependency to your `pom.xml`:
-```xml
-<dependency>
-  <groupId>com.github.gcacace</groupId>
-  <artifactId>signature-pad</artifactId>
-  <version>1.3.1</version>
-  <type>aar</type>
-</dependency>
-```
 
 ## Usage
 
